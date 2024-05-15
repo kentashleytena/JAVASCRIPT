@@ -1,0 +1,32 @@
+const NFTs= []
+
+function mintNFT (companyname, members, groupname, debutyear) {
+	const NFT = { 
+		"companyname": companyname,
+		"members": members,
+		"groupname": groupname,
+		"debutyear": debutyear,
+	}
+	NFTs.push(NFT);
+	  console.log("Minted: " + kpop);
+}
+
+function listNFTs () {
+	for(let i = 0; i < NFTs.length; i++) {
+	console.log(NFTs[i]);
+  }
+}
+
+function getTotalSupply() {
+  console.log(NFTs.length);
+}
+
+mintNFT("CUBE", 5, "G-IDLE", 2018);
+mintNFT("YG", 4, "2NE1", 2009);
+mintNFT("JYP", 10, "TWICE", 2015);
+mintNFT("SM", 24, "NCT", 2016);
+mintNFT("BIGHIT", 8, "BTS", 2023);
+
+listNFTs();
+
+console.log("TOTAL NFT:", getTotalSupply());
