@@ -1,14 +1,14 @@
 const NFTs= []
 
-function mintNFT (companyname, members, groupname, debutyear) {
+function mintNFT (shoes, top, bottom, perfume) {
 	const NFT = { 
-		"companyname": companyname,
-		"members": members,
-		"groupname": groupname,
-		"debutyear": debutyear,
+		"shoes": shoes,
+		"top": top,
+		"bottom": bottom,
+		"perfume": perfume,
 	}
 	NFTs.push(NFT);
-	  console.log("Minted: " + kpop);
+	  console.log("Minted: " + brand);
 }
 
 function listNFTs () {
@@ -21,12 +21,9 @@ function getTotalSupply() {
   console.log(NFTs.length);
 }
 
-mintNFT("CUBE", 5, "G-IDLE", 2018);
-mintNFT("YG", 4, "2NE1", 2009);
-mintNFT("JYP", 10, "TWICE", 2015);
-mintNFT("SM", 24, "NCT", 2016);
-mintNFT("BIGHIT", 8, "BTS", 2023);
+mintNFT("CONVERSE");
+mintNFT("UNIQLO");
+mintNFT("LEE");
+mintNFT("VERSACE");
 
 listNFTs();
-
-console.log("TOTAL NFT:", getTotalSupply());
