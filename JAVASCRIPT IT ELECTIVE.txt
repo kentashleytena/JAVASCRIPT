@@ -8,7 +8,7 @@ function mintNFT (shoes, top, bottom, perfume) {
 		"perfume": perfume,
 	}
 	NFTs.push(NFT);
-	  console.log("Minted: " + brand);
+	  console.log("brand: " + shoes);
 }
 
 function listNFTs () {
@@ -21,9 +21,11 @@ function getTotalSupply() {
   console.log(NFTs.length);
 }
 
-mintNFT("CONVERSE");
-mintNFT("UNIQLO");
-mintNFT("LEE");
-mintNFT("VERSACE");
+mintNFT("Converse", "polo", "Lee", "Versace");
+mintNFT("Uniqlo", "calvin klien", "Bvlgari", "clinique ");
+mintNFT("Lee","Hermes", "Dior", "Gucci ");
+mintNFT("Vesace", "Brioni ", " Armani", " Prada ");
 
 listNFTs();
+
+getTotalSupply(); 
